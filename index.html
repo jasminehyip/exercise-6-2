@@ -9,35 +9,38 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
 <style>
-  
+
   ul {
-    text-decoration: none;
-    list-style: none; 
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
     margin: 0;
-    padding: 0; 
-  }
-  
-  li {
-    display: inline;
-    margin: 20px;
-    text-decoration: none; 
-    font-size: 20px;
+    overflow: hidden;
   }
   
   li a:hover {
     color: #b8e2b0; 
+    text-decoration: none; 
   }
   
-  h1{
-    text-align: center; 
-    font-size: 36px;
+  ul li {
+    float: left; 
+  }
+  
+  ul li a {
+    display: block;
+    text-align: center;
+    padding: 20px 50px;
+    text-decoration: none;
   }
   
   .menu {
     display: grid; 
     grid-template-columns: 50% 50%;
-    gap: 50px;
+    gap: 20px;
     max-width: 1000px; 
+    margin: 0 auto;
   }
   
   .menu-item {
@@ -72,6 +75,8 @@
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  text-align: center; 
+    font-size: 36px;
   }
   
   #site-title {
